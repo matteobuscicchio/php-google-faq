@@ -47,17 +47,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP-GOOGLE-FAQ</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
     <body>
         
-        <?php
-            foreach ($db as $faq) {?>
-                <h2> <?php echo $faq["domanda"];?> </h2>
+        <main>
 
-                <?php foreach ($faq["paragrafi"] as $answer){?>
-                    <p> <?php echo $answer;?> </p>
-                <?php };
-            };
-        ?>
+            <?php
+                foreach ($db as $faq) {?>
+                    <h2> <?php echo $faq["domanda"];?> </h2>
+
+                    <?php foreach ($faq["paragrafi"] as $answer){?>
+                        <p> <?php echo $answer;?> </p>
+                    <?php };
+                };
+            ?>
+        </main>
     </body>
 </html>

@@ -1,0 +1,17 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    width: 80%;
+}
+h2{
+    margin-top: 80px;
+}
+p{
+    margin: 25px 0px 25px 0px;
+}
